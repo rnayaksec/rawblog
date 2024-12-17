@@ -1,0 +1,61 @@
+baseURL = 'https://rnayaksec.github.io/'
+languageCode = 'en-us'
+title = "Hands On Cybersecurity Learning Blog"
+theme="archie"
+copyright = "© Rohit Nayak"
+
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+
+paginate=10 # articles per page
+
+[params]
+	mode="light" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Learning cybersecurity concepts with hands on labs"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+	orderBy = "date desc"  # Descending order
+
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/rnayaksec"
+
+[[params.social]]
+name = "X"
+icon = "twitter"
+url = "https://x.com/rnayaksec"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/rohitnayak/"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/posts"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
