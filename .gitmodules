@@ -1,4 +1,0 @@
-[submodule "rnrawblog/public"]
-	path = rnrawblog/public
-	url = https://github.com/rnayaksec/rnayaksec.github.io.git
-	branch = main
