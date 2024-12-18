@@ -47,7 +47,7 @@ This creates a file bart_public.key containing bart’s public key.
 ```
 
 ```console
-   **-----BEGIN PGP PUBLIC KEY BLOCK-----**
+   -----BEGIN PGP PUBLIC KEY BLOCK-----
 
    mQGNBGdY...............
    ............
@@ -111,7 +111,7 @@ cat private-key-backup.asc
 ```
 
 ```console
-**-----BEGIN PGP PRIVATE KEY BLOCK-----**
+-----BEGIN PGP PRIVATE KEY BLOCK-----
 
 lQWGBG ...........
 =8Ju6

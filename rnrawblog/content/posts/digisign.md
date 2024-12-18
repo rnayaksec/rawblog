@@ -28,13 +28,13 @@ Please refer to [pre-requisite](/posts/linux_prereq_crypto.md) for this blog to 
     - compares the two hash values. If they match, the message is verified
 
 Here’s high level notation of what is happening
-* Sender sends the following 
+* **Sender** sends the following 
   - Digital Signature of Sender Encrypt with Private Key(Hash(Message))
   - Message itself
-* Reciever does the following
-  - Decrypt with Senders Public Key(DigitalSignatureofSender) which gives you the Hash(Message) from Sender i.e H1
-  - Calculate Hash( Message) that was received i.e.H2
-  - Compare both hashes and check if they are the same i.e. is H1 == H2?
+* **Reciever** does the following
+  - Decrypt with Senders Public Key(DigitalSignatureofSender) which gives you the <p style="color:royalblue">Hash(Message) from Sender ; lets call this value **H1**</p>
+  - Calculate Hash( Message) that was received and lets call this value <p style="color:orange">**H2**</p>
+  - Compare both hashes and check if they are the same i.e. is <p style="color:royalblue">**H1**</p> == <p style="color:orange">**H2**</p>?
   
 ### mikey’s Side (Signing the File)
 * mikey generates a key pair ( see previous lab on Asymmetric Keys for this)
@@ -68,12 +68,15 @@ gpg --verify signed_secret.sig secret_to_sign
 ```
 
 * If the signature is valid and the file has not been tampered with, GPG will display a message indicating that the signature is good and show mikey’s information.
-  ```console
+  
+```console
     gpg: Signature made Tue 10 Dec 2024 11:58:12 AM PST
     gpg:                using RSA key A6F6AFC9E969E6951FCE5DDC08C537A5ECE4F89D
     gpg: Good signature from "mikey12345 <mikey12345@gmail.com>" [ultimate]
 ```
+
 * If there’s a problem with the signature or the file has been altered, GPG will display an error message.
+
 ```console
     gpg: Signature made Tue 10 Dec 2024 11:58:12 AM PST
     gpg:                using RSA key A6F6AFC9E969E6951FCE5DDC08C537A5ECE4F89D

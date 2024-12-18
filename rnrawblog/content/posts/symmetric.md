@@ -12,15 +12,13 @@ Please refer to [pre-requisite](/posts/linux_prereq_crypto.md) for this blog to 
 
 ### Scenario
 * mikey wants to send an encrypted file to bart using a shared passphrase.
-
 * Both mikey and bart will use the same symmetric key (passphrase) for encryption and decryption.
-
 * The file to be encrypted is `turing_bio` stored at `/srv/shared`
 
 ```bash
 head turing_bio
 ```
-
+The file contains a paragraph from the wikipedia page for Alan Turing 
 ``` console
 Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist.
 ```
