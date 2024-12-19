@@ -1,6 +1,6 @@
 ---
-title: Crypto Lab 5- Key Exchange
-description: Crypto Lab 5- Key Exchange
+title: Crypto Lab 4- Key Exchange
+description: Crypto Lab 4- Key Exchange
 date : 2024-12-05
 ---
 
